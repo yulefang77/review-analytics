@@ -20,9 +20,19 @@ for d in data:
 	if len(d) < 100:
 		new.append(d)
 
-print('長度小於100個字母的留言，總共有', len(new), '筆。')
+print('總共有', len(new), '筆留言長度小於100個字母。')
 print('以下印出前2筆留言長度小於100個字母的內容。')
 print('--------------------')
 print(new[0])
 print('--------------------')
 print(new[1])
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+
+print('總共有', len(good), '筆留言內容提到good。')
+print('印出第一筆留言內容。')
+print('--------------------')
+print(good[0])
