@@ -13,4 +13,4 @@ sum_len = 0
 for d in data:
 	sum_len += len(d)
 
-print('每筆留言平均長度', sum_len / 1000000, '個字母。')
+print('每筆留言平均長度', sum_len / len(data), '個字母。')
